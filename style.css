@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+    
+}
+.row{
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr ;
+    border-radius: 10px;
+    
+
+}
+
+.car1{
+    background-color:#e38424ff;
+}
+.car2{
+    background-color:#016973ff;
+}
+.car3{
+    background-color:#00403fff;
+}
+.car1, .car2, .car3{
+    padding: 40px;
+
+}
+
+.circle-icon {
+    position: relative;
+    width: 40px; /* Set the desired size for your circle */
+    height: 40px; /* Set the desired size for your circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #3498db3f; /* Set the desired background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+
+  .bx-car:before {
+    content: "\ea27";
+    font-size: 30px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.text{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top:30px;
+    
+}
+
+p{
+    font-size: 18px;
+}
+
+.car1 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: #e38424ff;
+    border: none;
+    width: 50%;
+    margin-top: 60px;
+}
+.car2 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: #016973ff;
+    border: none;
+    width: 50%;
+    margin-top: 60px;
+}
+.car3 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: #00403fff;
+    border: none;
+    width: 50%;
+    margin-top: 60px;
+}
+
+@media (max-width:500px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+}
+@media (max-width:500px) {
+    body{
+        height: 100%;
+    }
+}
